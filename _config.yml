@@ -50,7 +50,7 @@ oauth:
   client_secret: 92e7bc8363a2a13ba9811955de93ea8b57fafc62
 
 authors:
-  mingo:
+  mingotech:
     name: mingo
     bio: 江湖未静,不得让位
     picture: assets/images/me.jpg

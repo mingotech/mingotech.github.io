@@ -10,12 +10,12 @@ categories = {
 
 }
 
-post_tpl = """ 
----
+post_tpl = """---
 title       : "%(title)s"
 author      : "mingo"
 date        : "%(post_time)s"
 
+layout      : post
 category    : %(category)s
 tag         : %(tag)s
 blog        : true

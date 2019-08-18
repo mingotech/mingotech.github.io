@@ -31,7 +31,7 @@ def select_tags():
     while True:
         _raw_tags = input("\n请选择文件标签, \033[33m多个标签请使用空格分隔\033[0m: ")
         if _raw_tags.strip() == "" and default_tag != "":
-            return (default_tag)
+            return "[\"%s\"]" % default_tag
 
         _tags = _raw_tags.split(" ")
 
@@ -42,7 +42,7 @@ def select_tags():
                 is_all_right = False
 
         if is_all_right:
-            return _tags
+            return "[%s]" % ",".join("\"%s\"" % wrap for wrap in _tags)
 
 post_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
