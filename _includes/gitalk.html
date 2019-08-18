@@ -6,9 +6,9 @@
     var gitalk = new Gitalk({
         clientID: '{{ site.oauth.client_id }}',
         clientSecret: '{{ site.oauth.client_secret }}',
-        repo: '{{ site.authors.ahcming.repo }}',
-        owner: '{{ site.authors.ahcming.name }}',
-        admin: ['{{ site.authors.ahcming.name }}'],
+        repo: '{{ site.authors.mingo.repo }}',
+        owner: '{{ site.authors.mingo.name }}',
+        admin: ['{{ site.authors.mingo.name }}'],
         id: decodeURI(window.location.pathname),
     });
     gitalk.render('gitalk-container');

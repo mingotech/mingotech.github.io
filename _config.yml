@@ -46,11 +46,11 @@ medium: mingo
 email: ahcming@gmail.com
 
 oauth:
-  client_id: 374025502c4413b98ccb
-  client_secret: e44d7371dc3f514fade0f8b3e678988ba7d6121a
+  client_id: 3286089c2b3760740ec6
+  client_secret: 92e7bc8363a2a13ba9811955de93ea8b57fafc62
 
 authors:
-  ahcming:
+  mingo:
     name: mingo
     bio: 江湖未静,不得让位
     picture: assets/images/me.jpg
