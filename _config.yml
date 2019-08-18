@@ -10,7 +10,7 @@ description:
 external-image: false
 picture: assets/images/me.jpg
 
-url: https://mingo.github.io
+url: https://mingotech.github.io
 
 #permalink: /:title/
 permalink: /:year/:month/:day/:title
@@ -39,11 +39,11 @@ disqus: false
 # linkedin: mylinkedin
 #youtube: myyoutube
 #spotify: myspotify
-github: ahcming
-medium: ahcming
+github: mingotech
+medium: mingo
 #soundcloud: ahcming
 #vimeo: myvimeo
-email: ahcming@163.com
+email: ahcming@gmail.com
 
 oauth:
   client_id: 374025502c4413b98ccb
@@ -51,11 +51,11 @@ oauth:
 
 authors:
   ahcming:
-    name: ahcming
+    name: mingo
     bio: 江湖未静,不得让位
     picture: assets/images/me.jpg
-    QQ: ahcming
-    repo: ahcming.github.io
+    QQ: 979387179
+    repo: mingotech.github.io
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -63,14 +63,14 @@ authors:
 width: large
 
 # if you don't need pagination, comment the *paginate* configs below
-paginate: 7
+paginate: 12
 paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
 projects: false
 
 # if you don't need "about" or "blog", comment them out below
-about: false
+about: true
 blog: true
 # do you want to show the "read time" of the posts?
 read-time: false
