@@ -1,6 +1,6 @@
 ---
 title        : "Mysql数据类型的大小及范围"
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2019-04-04 12:18
 layout       : post

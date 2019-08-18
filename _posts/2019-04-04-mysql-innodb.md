@@ -1,6 +1,6 @@
 ---
 title        : "Mysql InnoDB引擎的一些使用总结"
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2019-04-04 12:39
 layout       : post

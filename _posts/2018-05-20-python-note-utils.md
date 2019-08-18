@@ -1,6 +1,6 @@
 ---
 title        : Python学习(3) - 工具类
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2018-05-20 16:59
 layout       : post

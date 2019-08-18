@@ -1,6 +1,6 @@
 ---
 title        : "设计模式之抽象工厂模式"
-author       : ahcming
+author       : mingo
 category     : subject
 date         : 2019-04-07 09:55
 layout       : post

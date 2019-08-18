@@ -1,6 +1,6 @@
 ---
 title        : "设计模式之构造器模式"
-author       : ahcming
+author       : mingo
 category     : subject
 date         : 2019-04-09 09:55
 layout       : post

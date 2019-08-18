@@ -47,7 +47,7 @@ POSTPATH="${BINPATH}/_posts"
 DIST_FOLDER="$POSTPATH"
 
 # Set your blog URL
-BLOG_URL="https://ahcming.github.io/"
+BLOG_URL="https://mingotech.github.io/"
 
 # Set your assets URL
 ASSETS_URL="assets/images/"
@@ -110,7 +110,7 @@ initpost_content() {
 
 echo "---"
 echo "title        : \"${POST_TITLE}\""
-echo "author       : ahcming"
+echo "author       : "mingo"
 echo "description  : "
 echo "date         : ${CURRENT_DATE} ${TIME}"
 

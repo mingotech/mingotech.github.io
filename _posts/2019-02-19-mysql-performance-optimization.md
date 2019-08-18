@@ -1,6 +1,6 @@
 ---
 title        : "MySQL性能优化"
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2019-02-19 13:33
 layout       : post

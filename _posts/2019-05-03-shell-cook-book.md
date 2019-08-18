@@ -1,6 +1,6 @@
 ---
 title        : "Shell一天入门手册"
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2019-05-03 16:11
 layout       : post

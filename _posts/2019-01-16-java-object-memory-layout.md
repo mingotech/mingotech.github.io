@@ -1,6 +1,6 @@
 ---
 title        : "Java对象内存布局"
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2019-01-16 10:41
 layout       : post

@@ -1,6 +1,6 @@
 ---
 title        : "设计模式之享元模式"
-author       : ahcming
+author       : mingo
 category     : subject
 date         : 2019-04-05 09:55
 layout       : post

@@ -1,6 +1,6 @@
 ---
 title        : Java Unsafe类使用说明
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2019-01-07 14:28
 layout       : post

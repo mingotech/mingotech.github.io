@@ -1,5 +1,5 @@
 # main text of home
-name: mingo
+name: mingotech
 bio: 江湖未静,不得让位
 
 # twitter summary info
@@ -40,8 +40,8 @@ disqus: false
 #youtube: myyoutube
 #spotify: myspotify
 github: mingotech
-medium: mingo
-#soundcloud: ahcming
+medium: mingotech
+#soundcloud: mingotech
 #vimeo: myvimeo
 email: ahcming@gmail.com
 
@@ -50,8 +50,8 @@ oauth:
   client_secret: 92e7bc8363a2a13ba9811955de93ea8b57fafc62
 
 authors:
-  mingotech:
-    name: mingo
+  mingo:
+    name: mingotech
     bio: 江湖未静,不得让位
     picture: assets/images/me.jpg
     QQ: 979387179

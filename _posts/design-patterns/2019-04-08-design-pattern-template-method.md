@@ -1,6 +1,6 @@
 ---
 title        : "设计模式之模板模式"
-author       : ahcming
+author       : mingo
 category     : subject
 date         : 2019-04-08 09:55
 layout       : post

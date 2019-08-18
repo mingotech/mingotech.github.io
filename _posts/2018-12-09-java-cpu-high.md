@@ -1,6 +1,6 @@
 ---
 title        : "线上JAVA进程CPU高处理过程"
-author       : ahcming
+author       : mingo
 category     : public
 date         : 2018-12-09 14:50
 layout       : post
