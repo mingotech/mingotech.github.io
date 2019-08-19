@@ -1,10 +1,10 @@
 ---
 title        : "设计模式之装饰模式"
 author       : mingo
-category     : subject
+category     : design-patterns
 date         : 2019-04-11 09:55
 layout       : post
-tag          : ["work", "original", "design pattern"]
+tag          : ["design pattern","original"]
 blog         : true
 ---
 

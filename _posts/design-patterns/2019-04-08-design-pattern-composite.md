@@ -1,10 +1,10 @@
 ---
 title        : "设计模式之组合模式"
 author       : mingo
-category     : subject
+category     : design-patterns
 date         : 2019-04-08 09:55
 layout       : post
-tag          : ["work", "original", "design pattern"]
+tag          : ["design pattern","original"]
 blog         : true
 ---
 

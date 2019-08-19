@@ -1,10 +1,10 @@
 ---
 title        : "设计模式之访问者模式"
 author       : mingo
-category     : subject
+category     : design-patterns
 date         : 2019-04-05 09:55
 layout       : post
-tag          : ["work", "original", "design pattern"]
+tag          : ["design pattern","original"]
 blog         : true
 ---
 

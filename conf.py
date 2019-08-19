@@ -1,15 +1,161 @@
 # create 脚本所需要常量定义
 
-tags = {
-        "MySQL": {"default": False, "remark": "MySQL相关"},
-        "other": {"default": True, "remark": "文章暂时不好分类可使用此tag"}
-}
+# 标签树
+# level1: category
+# level2: tag
+label_tree = [
+    {
+        "category": "mysql",
+        "remark": "MySQL相关",
+        "tags": [
+            {"tag": "Innodb", "remark": "Innodb索引说明"},
+            {"tag": "事务", "remark": "事务相关"},
+            {"tag": "mysql", "remark": "mysql通用相关", "default": True},
+        ]
+    },
 
-categories = {
-        "public": {"default": "true", "remark": "是否是公开的"}
+    {
+        "category": "cache",
+        "remark": "Cache相关",
+        "tags": [
+            {"tag": "redis", "remark": "redis使用相关", "default": True},
+            {"tag": "memcache", "remark": "memcache相关"},
+        ]
+    },
 
-}
+    {
+        "category": "mq",
+        "remark": "MessageQueue相关",
+        "tags": [
+            {"tag": "kafaka", "remark": "kafaka使用相关", "default": True},
+            {"tag": "RocketMQ", "remark": "RocketMQ使用相关"},
+        ]
+    },
 
+    {
+        "category": "zk",
+        "remark": "Zookeeper相关",
+        "tags": [
+            {"tag": "zk算法", "remark": "zk使用算法,理论"},
+            {"tag": "zk", "remark": "zk通用相关", "default": True},
+        ]
+    },
+
+    {
+        "category": "lib",
+        "remark": "各种库的使用说明, 源码分析",
+        "tags": [
+            {"tag": "RxJava", "remark": "RxJava框架"},
+            {"tag": "Spring", "remark": "Spring框架", "default": True},
+        ]
+    },
+
+    {
+        "category": "test",
+        "remark": "测试相关,性能测试,安全测试",
+        "tags": [
+            {"tag": "ab", "remark": "ab测试", "default": True},
+        ]
+    },
+
+    {
+        "category": "tool",
+        "remark": "软件开发工具类",
+        "tags": [
+            {"tag": "fiddler", "remark": "fiddler网络抓包工具"},
+            {"tag": "awk", "remark": "awk使用技巧", "default": True},
+            {"tag": "tcpdump", "remark": "tcpdump网络抓包工具"},
+            {"tag": "strace", "remark": "strace工具说明"},
+        ]
+    },
+
+    {
+        "category": "python",
+        "remark": "Python相关的总结",
+        "tags": [
+            {"tag": "python", "remark": "python常用点说明", "default": True},
+        ]
+    },
+
+    {
+        "category": "java",
+        "remark": "Java相关的心得体会",
+        "tags": [
+            {"tag": "jvm", "remark": "jvm总结"},
+            {"tag": "gc", "remark": "gc总结"},
+            {"tag": "java", "remark": "java常用点说明", "default": True},
+        ]
+    },
+
+    {
+        "category": "golang",
+        "remark": "Golang相关的心得体会",
+        "tags": [
+            {"tag": "golang", "remark": "golang常用点说明", "default": True},
+        ]
+    },
+
+    {
+        "category": "uinx",
+        "remark": "unix服务器使用,配置,调优相关",
+        "tags": [
+            {"tag": "shell", "remark": "shell说明", "default": True},
+            {"tag": "bash", "remark": "bash编程"},
+        ]
+    },
+
+    {
+        "category": "net",
+        "remark": "网络相关",
+        "tags": [
+            {"tag": "tcp/udp", "remark": "tcp/udp编程"},
+            {"tag": "net", "remark": "net常用点总结", "default": True},
+        ]
+    },
+
+    {
+        "category": "perf",
+        "remark": "性能调优相关",
+        "tags": [
+            {"tag": "perf", "remark": "perf常用点总结"},
+        ]
+    },
+
+    {
+        "category": "cloud",
+        "remark": "云应用相关",
+        "tags": [
+            {"tag": "docker", "remark": "docker常用点总结"},
+            {"tag": "k8s", "remark": "k8s常用点总结", "default": True},
+        ]
+    },
+
+    {
+        "category": "arch",
+        "remark": "架构相关",
+        "tags": [
+            {"tag": "arch", "remark": "arch常用点总结", "default": True},
+        ]
+    },
+
+    {
+        "category": "design-patterns",
+        "remark": "设计模式",
+        "tags": [
+            {"tag": "design-patterns", "remark": "design-patterns常用点总结", "default": True},
+        ]
+    },
+
+    {
+        "category": "other",
+        "remark": "文章暂时还没想好归类的",
+        "default": True,
+        "tags": [
+            {"tag": "other", "remark": "other常用点总结", "default": True},
+        ]
+    },
+]
+       
 post_tpl = """---
 title       : "%(title)s"
 author      : "mingo"
@@ -17,7 +163,7 @@ date        : "%(post_time)s"
 
 layout      : post
 category    : %(category)s
-tag         : %(tag)s
+tag         : [%(tag)s]
 blog        : true
 star        : %(star)s
 ---
