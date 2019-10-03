@@ -96,11 +96,12 @@ label_tree = [
     },
 
     {
-        "category": "uinx",
+        "category": "unix",
         "remark": "unix服务器使用,配置,调优相关",
         "tags": [
             {"tag": "shell", "remark": "shell说明", "default": True},
             {"tag": "bash", "remark": "bash编程"},
+            {"tag": "net", "remark": "网络编程"},
         ]
     },
 
