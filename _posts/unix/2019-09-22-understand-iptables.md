@@ -101,23 +101,23 @@ Routing decision                                                  |
 
 ### PREROUTING
 
-- 从上图也可以看出来, `PREROUTING`应该是对请求包进行一次路由前全局处理
+- 具体就是在`INPUT`与`FORWARD`链之前统一执行的规则
 
 ### INPUT
 
-- 包到目标机器的规则执行
+- 包到目标机器的规则执行; 比如白名单, 只允许指定主机访问本机或者内网机器访问
 
 ### FORWARD
 
-- 包到目标机器的转发规则
+- 包需要转发的转发规则
 
 ### OUTPUT
 
-- 目标机器到包的规则执行
+- 目标机器到包的规则执行; 比如屏蔽某个网站的防问
 
 ### POSTROUTING
 
-- 从上图也可以看出来, `PREROUTING`应该是对请求包进行一次路由前全局处理
+- 具体就是在`OUTPUT`与`FORWARD`链之后统一执行的规则
 
 > 这5条链条的作用是我自己使用经验总结, 不一定正确, 后续有新体悟再来补充
 
@@ -187,6 +187,7 @@ Routing decision                                                  |
 - `-m`: 执行扩展模块, 比如`comment`, 对规则添加评论注释; `state`模块, 记录网络包状态, 记录了状态就能达到"连接追踪"的功能
 
 > iptables -I INPUT -p all -j ACCEPT -m state --state RELATED,ESTABLISHED
+
 > iptables -A INPUT -p all -j REJECT --reject-with icmp-host-prohibited
 
 上面的这2条规则配合使用能达到只有本机发出的包接受, 其它主机主动发过来的包都会被拒绝
