@@ -91,7 +91,8 @@ label_tree = [
         "category": "golang",
         "remark": "Golang相关的心得体会",
         "tags": [
-            {"tag": "golang", "remark": "golang常用点说明", "default": True},
+            {"tag": "tips", "remark": "golang常用点说明", "default": True},
+            {"tag": "channel", "remark": "golang Channel用法", "default": True},
         ]
     },
 
