@@ -149,6 +149,16 @@ label_tree = [
     },
 
     {
+        "category": "bigdata",
+        "remark": "大数据",
+        "tags": [
+            {"tag": "survey", "remark": "调研", "default": True},
+            {"tag": "click_hourse", "remark": "click_hourse", "default": False},
+            {"tag": "OLAP", "remark": "OLAP", "default": False},
+        ]
+    },
+
+    {
         "category": "other",
         "remark": "文章暂时还没想好归类的",
         "default": True,
